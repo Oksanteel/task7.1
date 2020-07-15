@@ -9,7 +9,7 @@ class StatisticsServiceTest {
   long[] incomesInBillions = {1, 2, 5, 8, 4, 5, 3, 8, 6, 11, 11, 12};
 
   @Test
-  void findMax() {
+  void shouldFindMax() {
 
     long expected = 12;
     long actual = service.findMax(incomesInBillions);
@@ -17,7 +17,7 @@ class StatisticsServiceTest {
     assertEquals(expected, actual);
   }
   @Test
-  void findSum() {
+  void shouldFindSum() {
     long expected = 76;
 
     long actual = service.findSum(incomesInBillions);
@@ -25,7 +25,7 @@ class StatisticsServiceTest {
   }
 
   @Test
-  void findAverage() {
+  void shouldFindAverage() {
     long expected = 6;
     long actual = service.findAverage(incomesInBillions);
 
